@@ -1,7 +1,13 @@
 @font-face {
   font-family: gomarice;
   src: url(./fonts/gomarice_game_music_love.ttf);
+
 }
+@font-face {
+  font-family: glitch;
+  src: url(./fonts/DEBUG_FREE_TRIAL.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,12 +89,12 @@
 .board__cell {
   width: calc(100% / 3);
   display: inline-block;
-  font-size: 40px;
+  font-size: 200px;
   text-align: center;
   border: 2px solid #000;
   padding: 20px;
   vertical-align: top;
-  font-family: "Permanent Marker";
+  font-family: "glitch";
 }
 
 .board__cell--winner {
@@ -99,7 +105,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "Permanent Marker";
+  font-family: "glitch";
 }
 
 /* WINNER CONTAINER */
@@ -124,6 +130,7 @@
     margin-top: 12px;
     word-spacing: 3px;
     background-color: #fff;
+    margin-bottom: 15px;
 }
 
 .replay-btn:hover,
