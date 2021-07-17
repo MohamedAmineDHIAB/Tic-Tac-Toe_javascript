@@ -1,3 +1,7 @@
+@font-face {
+  font-family: gomarice;
+  src: url(./fonts/gomarice_game_music_love.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +14,10 @@
 }
 
 .header {
+  font-size: 150px;
   text-align: center;
-  margin: 15px 0;
-  font-family: "Permanent Marker";
+  margin: 100px 0;
+  font-family: "gomarice";
 }
 
 .enter-players {
@@ -27,7 +32,7 @@
   outline: none;
   padding: 4px 8px;
   margin: 0 0 10px 4px;
-  font-size: 18px;   
+  font-size: 18px;
 }
 
 .input-field:focus {
@@ -148,4 +153,11 @@
   .replay-btn {
     width: 50%;
   }
+}
+
+.body{
+  background:url(./background/bg.jpg) ;
+  background-size:cover;
+  padding-bottom: 500px;
+
 }
