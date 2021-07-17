@@ -7,6 +7,11 @@
   font-family: glitch;
   src: url(./fonts/DEBUG_FREE_TRIAL.ttf);
 }
+@font-face {
+  font-family: public;
+  src: url(./fonts/PublicSans-Black.otf);
+}
+
 
 * {
   margin: 0;
@@ -20,10 +25,11 @@
 }
 
 .header {
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
-  margin: 100px 0;
+  margin: 30px 0;
   font-family: "gomarice";
+  color: #9E7118;
 }
 
 .enter-players {
@@ -31,6 +37,10 @@
   width: 80%;
   text-align: center;
   position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "public";
+  color: #EB190C ;
 }
 
 .input-field {
@@ -38,7 +48,9 @@
   outline: none;
   padding: 4px 8px;
   margin: 0 0 10px 4px;
-  font-size: 18px;
+  font-size: 30px;
+  font-family: "public";
+  color: #000000 ;
 }
 
 .input-field:focus {
@@ -48,11 +60,13 @@
 .submit-btn {
   border: 2px solid #000;
   padding: 8px 8px;
-  font-size: 18px;
+  font-size: 30px;
   width: 250px;
   border-radius: 5px;
   margin-top: 10px;
   background-color: #fff;
+  font-family: "public";
+  color: #EB190C ;
 }
 
 .submit-btn:active,
@@ -68,11 +82,16 @@
 .board___player-turn {
   text-align: center;
   margin: 10px 0 10px;
-  height: 54px;
+  height: 40px;
+  font-size:30px;
+  font-family: "public";
+  color: #EB190C ;
 }
 
 .name--style {
-  font-size: 22px;
+  font-size: 30px;
+  font-family: "public";
+  color: #EB190C;
 }
 
 .board__container {
@@ -126,11 +145,14 @@
     outline: none;
     letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 16px;
     margin-top: 12px;
     word-spacing: 3px;
     background-color: #fff;
     margin-bottom: 15px;
+    font-family: "public";
+    color: #EB190C ;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .replay-btn:hover,
@@ -162,9 +184,9 @@
   }
 }
 
-.body{
-  background:url(./background/bg.jpg) ;
+body{
+  background:url(./background/bg.jpg) no-repeat;
   background-size:cover;
-  padding-bottom: 500px;
+  padding-bottom: 0px;
 
 }
