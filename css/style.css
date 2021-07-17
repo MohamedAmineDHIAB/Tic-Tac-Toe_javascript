@@ -145,20 +145,20 @@
 }
 
 .replay-btn {
-  width: 25%;
+  width: 20%;
     padding: 10px 20px;
     border: 2px solid #000;
     border-radius: 5px;
     outline: none;
-    letter-spacing: 0;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 12px;
     word-spacing: 3px;
     background-color: #fff;
     margin-bottom: 15px;
-    font-family: "public";
+    font-family: "petangue";
     color: #EB190C ;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -185,6 +185,12 @@
   font-family: "petangue";
   margin-bottom: 50px;
 
+}
+.clear-board{
+  font-family: "petangue";
+  color: #EB190C ;
+  font-size: 50px;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 767px) {
