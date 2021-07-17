@@ -4,8 +4,8 @@
 
 }
 @font-face {
-  font-family: glitch;
-  src: url(./fonts/DEBUG_FREE_TRIAL.ttf);
+  font-family: petangue;
+  src: url(./fonts/petangue_DEMO.otf);
 }
 @font-face {
   font-family: public;
@@ -31,7 +31,13 @@
   font-family: "gomarice";
   color: #9E7118;
 }
+.player-label{
+  font-size: 50px;
+  font-weight: normal;
 
+  font-family: "petangue";
+  color: #EB190C ;
+}
 .enter-players {
   margin: 0 auto;
   width: 80%;
@@ -39,7 +45,7 @@
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  font-family: "public";
+  font-family: "petangue";
   color: #EB190C ;
 }
 
@@ -60,12 +66,12 @@
 .submit-btn {
   border: 2px solid #000;
   padding: 8px 8px;
-  font-size: 30px;
+  font-size: 50px;
   width: 250px;
   border-radius: 5px;
   margin-top: 10px;
   background-color: #fff;
-  font-family: "public";
+  font-family: "petangue";
   color: #EB190C ;
 }
 
@@ -83,14 +89,14 @@
   text-align: center;
   margin: 10px 0 10px;
   height: 40px;
-  font-size:30px;
-  font-family: "public";
+  font-size:60px;
+  font-family: "petangue";
   color: #EB190C ;
 }
 
 .name--style {
-  font-size: 30px;
-  font-family: "public";
+  font-size: 60px;
+  font-family: "petangue";
   color: #EB190C;
 }
 
@@ -98,6 +104,7 @@
   width: 40%;
   background-color: pink;
   margin: 0 auto;
+  margin-top: 100px;
   font-size: 0;
   border: 2px solid #000;
   -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
@@ -113,7 +120,7 @@
   border: 2px solid #000;
   padding: 20px;
   vertical-align: top;
-  font-family: "glitch";
+  font-family: "petangue";
 }
 
 .board__cell--winner {
@@ -124,7 +131,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "glitch";
+  font-family: "petangue";
 }
 
 /* WINNER CONTAINER */
@@ -163,14 +170,21 @@
 }
 
 .congratulations {
-  font-size: 24px;
+  font-family: "petangue";
+  color: #EB190C ;
+  font-size: 70px;
+  margin-bottom: 20px;
+  margin-top: -20px;
 }
 
 .u-r-winner {
-  font-size: 18px;
+  font-size: 70px;
   height: 18px;
   line-height: 18px;
   margin: 2px 0;
+  font-family: "petangue";
+  margin-bottom: 50px;
+
 }
 
 @media only screen and (max-width: 767px) {

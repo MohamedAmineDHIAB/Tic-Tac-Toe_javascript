@@ -2,7 +2,7 @@
 
 window.addEventListener('load', app);
 
-let gameBoard = ['', '', '', '', '', '', '', '', '']; 
+let gameBoard = ['', '', '', '', '', '', '', '', ''];
 let turn = 0; // Keeps track if X or O player's turn
 let winner = false;
 
@@ -55,7 +55,7 @@ window.addEventListener("resize", onResize);
 function onResize() {
   let allCells = document.querySelectorAll('.board__cell');
   let cellHeight = allCells[0].offsetWidth;
-  
+
   allCells.forEach( cell => {
     cell.style.height = `${cellHeight}px`;
   });
@@ -74,10 +74,10 @@ function buildBoard() {
 // CELL CLICK EVENT FOR PLAYER TO ATTEMPT TO MAKE MOVE
 function makeMove(event) {
   console.log(turn);
-  
+
   let currentCell = parseInt(event.currentTarget.firstElementChild.dataset.id);
   let cellToAddToken = document.querySelector(`[data-id='${currentCell}']`);
-  
+
   if (cellToAddToken.innerHTML !== '') {
     console.log('This cell is already taken.');
     return;
@@ -90,10 +90,10 @@ function makeMove(event) {
       gameBoard[currentCell] = 'O';
     }
   }
-    
+
   // CHECK IF WE HAVE A WINNER
   isWinner();
-    
+
   // Update turn count so next player can choose
   turn ++;
 
@@ -129,14 +129,14 @@ function isWinner() {
       gameBoard[cell3] === currentPlayer()
     ) {
 
-      
+
       const cells = document.querySelectorAll('.board__cell');
       let letterId1 = document.querySelector(`[data-id='${cell1}']`);
       let letterId2 = document.querySelector(`[data-id='${cell2}']`);
       let letterId3 = document.querySelector(`[data-id='${cell3}']`);
-      
+
       cells.forEach( cell => {
-        let cellId = cell.firstElementChild.dataset.id;	
+        let cellId = cell.firstElementChild.dataset.id;
 
         if (cellId == cell1 || cellId == cell2 || cellId == cell3 ) {
           cell.classList.add('board__cell--winner');
@@ -146,7 +146,7 @@ function isWinner() {
       let currentPlayerText = document.querySelector('.board___player-turn');
       if (currentPlayer() === 'X') {
         currentPlayerText.innerHTML = `
-          <div class="congratulations">Congratulations ${playerX.name}</div>
+          <div class="congratulations">Congratulations ${playerX.name}!</div>
           <div class="u-r-winner">You are our winner!</div>
         `;
         winner = true;
@@ -167,7 +167,7 @@ function isWinner() {
   if (!winner) {
     checkIfTie();
   }
-  
+
   return false;
 }
 
@@ -190,9 +190,9 @@ function changeBoardHeaderNames() {
 
 function resetBoard() {
   console.log('resetting');
-  
-  gameBoard = ['', '', '', '', '', '', '', '', '']; 
-  
+
+  gameBoard = ['', '', '', '', '', '', '', '', ''];
+
   let cellToAddToken = document.querySelectorAll('.letter');
   cellToAddToken.forEach( square => {
     square.textContent = '';
