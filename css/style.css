@@ -54,7 +54,9 @@ body{
   -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(221,122,41,0.2));
   letter-spacing:-15px;
 }
-
+a {
+  text-decoration: none;
+}
 .header span{
   position:relative;
   display:inline-block;
@@ -112,7 +114,32 @@ body{
 .input-field:focus {
   border: 2px solid #E15E32;
 }
+.new_game-btn {
+  border: 2px solid #000;
+  padding: 8px 8px;
+  font-size: 15px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #fff;
+  font-family: "petangue";
+  color: #EB190C ;
 
+  position: relative;
+  top:20px;
+  left:20px;
+
+
+}
+.home-btn {
+  width:25px;
+  height:25px;
+  position: relative;
+  top:9px;
+  bottom:0px;
+  left:0px;
+
+}
 .submit-btn {
   border: 2px solid #000;
   padding: 8px 8px;
