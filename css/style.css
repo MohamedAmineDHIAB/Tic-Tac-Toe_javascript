@@ -25,7 +25,7 @@ body{
   background:linear-gradient(-45deg,#8C77FF,#009EFF,#00FFD9);
   background-size:400% 400%;
   position: relative;
-  animation: change 6s ease-in-out infinite;
+  animation: change 7s ease-in-out infinite;
   background-repeat: no-repeat;
 }
 @keyframes change{
