@@ -59,7 +59,7 @@ body{
   color:#dd7a29;
   font-family: "gomarice";
   animation:animate 1s ease-in-out infinite;
-  animation-delay:calc(0.08s*var(--i));
+  animation-delay:calc(0.07s*var(--i));
 
 }
 @keyframes animate{
@@ -68,12 +68,12 @@ body{
     transform: translateY(0px);
 
   }
-  20%
+  30%
   {
     transform: translateY(-20px);
 
   }
-  40%,100%
+  60%
   {
     transform: translateY(0px);
 
