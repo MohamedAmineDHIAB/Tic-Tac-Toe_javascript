@@ -19,6 +19,24 @@
   font-family: "Helvetica", sans-serif;
   box-sizing: border-box;
 }
+body{
+  background:linear-gradient(-45deg,#8C77FF,#009EFF,#00FFD9);
+  background-size:400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+  background-repeat: no-repeat;
+}
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
 
 .hide-container {
   display: none;
@@ -29,7 +47,37 @@
   text-align: center;
   margin: 30px 0;
   font-family: "gomarice";
-  color: #9E7118;
+  color: #dd7a29;
+  text-shadow:1px 2px 5px #000;
+  -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(221,122,41,0.2));
+  letter-spacing:-15px;
+}
+
+.header span{
+  position:relative;
+  display:inline-block;
+  color:#dd7a29;
+  font-family: "gomarice";
+  animation:animate 1s ease-in-out infinite;
+  animation-delay:calc(0.08s*var(--i));
+
+}
+@keyframes animate{
+  0%
+  {
+    transform: translateY(0px);
+
+  }
+  20%
+  {
+    transform: translateY(-20px);
+
+  }
+  40%,100%
+  {
+    transform: translateY(0px);
+
+  }
 }
 .player-label{
   font-size: 50px;
@@ -166,7 +214,7 @@
 .replay-btn:active {
   outline: none;
   color: #fff;
-  background-color: #000;
+  background-color: rgb(177, 175, 175);
 }
 
 .congratulations {
@@ -204,9 +252,3 @@
   }
 }
 
-body{
-  background:url(./background/bg.jpg) no-repeat;
-  background-size:cover;
-  padding-bottom: 0px;
-
-}
